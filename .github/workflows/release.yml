@@ -122,6 +122,10 @@ jobs:
             release-name: x86_64-freebsd
             tool: cross
             skip-test: true
+          - os: ubuntu-latest
+            target: i686-unknown-freebsd
+            release-name: i686-freebsd
+            tool: cross  
             # extra-args: "--no-default-features --features ring"
           # RISC-V
           - os: ubuntu-latest
@@ -156,7 +160,7 @@ jobs:
             target: x86_64-linux-android
             release-name: x86_64-android
             tool: cross
-            skip-test: true            
+            skip-test: true  
 
           # Linux mips: tier-3, pity
           # Windows gnu: tokio dont work
